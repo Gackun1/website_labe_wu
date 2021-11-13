@@ -1,0 +1,13 @@
+.parallax-box {
+  width: 100%;
+  height: 300px;
+  position: relative;
+  overflow: hidden;
+  &__img {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 600px;
+    object-fit: cover;
+  }
+}

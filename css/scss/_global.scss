@@ -1,0 +1,40 @@
+$color-white: #ffffff;
+
+@font-face {
+  font-family: "AbrilFatface";
+  src: url(../font/AbrilFatface-Regular.ttf);
+}
+
+* {
+  font-size: 62.5%;
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  list-style: none;
+}
+
+p,
+a,
+span,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: AbrilFatface;
+  font-weight: 400;
+  font-style: normal;
+  letter-spacing: 0.1rem;
+}
+
+p,
+a,
+span {
+  font-size: 1.6rem;
+  line-height: 200%;
+}
+
+p + p {
+  margin-top: 1rem;
+}
