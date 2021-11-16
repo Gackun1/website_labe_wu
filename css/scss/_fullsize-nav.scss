@@ -1,0 +1,57 @@
+.fullsize-nav {
+  position: fixed;
+  top: 0;
+  right: 0;
+  z-index: 100;
+  width: 0;
+  height: 100vh;
+  background: #000000cc;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  transition: 1s ease;
+  a {
+    transform: translate(150%, 0);
+  }
+  &--open {
+    width: 100%;
+    a {
+      transform: translate(0, 0);
+    }
+  }
+  &__icon {
+    position: absolute;
+    right: 3.5rem;
+    top: 3.5rem;
+    cursor: pointer;
+    opacity: 1;
+    transition: 0.75s ease;
+    &--close {
+      opacity: 0;
+    }
+  }
+  &__list {
+    width: 100%;
+  }
+  &__item {
+    width: 100%;
+    padding: 10px 0;
+    @for $i from 1 through 6 {
+      &:nth-of-type(#{$i}) {
+        a {
+          transition-delay: calc(0.1s + (#{$i}s / 20));
+        }
+      }
+    }
+    a {
+      text-align: center;
+      display: block;
+      width: 100%;
+      color: #fff;
+      font-size: 26px;
+      white-space: nowrap;
+      transition: 1s ease;
+    }
+  }
+}

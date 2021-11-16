@@ -1,11 +1,99 @@
 .stuation {
   width: 100%;
-  margin: 10rem 0 0 0;
+  margin: 15rem 0 0 0;
+  box-shadow: 0 -5px 5px #88888811;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
   &__imgbox {
     img {
       width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+  }
+  &__txtbox {
+    padding: 0 4rem;
+    background: #f5f4f4;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  &__ttl {
+    font-size: 2.2rem;
+    font-weight: bold;
+    text-align: center;
+    white-space: nowrap;
+    position: relative;
+    padding: 0 0 0.5rem 0;
+    margin: 0 0 2.5rem 0;
+    &:after {
+      content: "";
+      width: 20rem;
+      height: 1px;
+      position: absolute;
+      bottom: 0;
+      left: 50%;
+      transform: translate(-50%, 0);
+      background: #cccccc;
+    }
+  }
+  &__subttl {
+    font-size: 2.5rem;
+    text-align: center;
+    color: #888;
+    font-style: italic;
+    display: block;
+  }
+  &__p {
+    font-size: 1.4rem;
+  }
+  &__btn {
+    width: fit-content;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: solid 1px #ccc;
+    padding: 0.6rem 2rem;
+    margin: 3rem auto 0 auto;
+    font-size: 1rem;
+    transition: 0.3s ease;
+    &:hover {
+      background: #eee;
+    }
+  }
+}
+
+@media screen and (max-width: 1460px) {
+  .stuation {
+    &__txtbox {
+      padding: 0 2rem;
+    }
+    &__btn {
+      margin: 2rem auto 0 auto;
+    }
+  }
+}
+
+@media screen and (max-width: 720px) {
+  .stuation {
+    grid-template-columns: 1fr 1fr;
+    & :nth-child(3) {
+      grid-column: 2 / 3;
+      grid-row: 2 / 3;
+    }
+    & :nth-child(7) {
+      grid-column: 2 / 3;
+      grid-row: 4 / 5;
+    }
+    &__txtbox {
+      padding: 0 2rem 1rem 2rem;
+    }
+    &__btn {
+      margin-top: 1.5rem;
+    }
+    &__ttl {
+      margin: -0.8rem 0 1.5rem 0;
     }
   }
 }

@@ -1,0 +1,12 @@
+.contact {
+  padding: 5rem 0 12rem 0;
+  display: flex;
+  justify-content: center;
+  transition: 0.3s ease;
+}
+
+@media screen and (max-width: 720px) {
+  .contact {
+    padding: 5rem 0 8rem 0;
+  }
+}

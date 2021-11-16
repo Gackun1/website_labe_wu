@@ -1,0 +1,32 @@
+.footer {
+  height: 75rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: url(../img/bg5.png);
+  background-position: center;
+  background-size: cover;
+  position: relative;
+  &__list {
+    color: #fff;
+    margin: 0 0 3rem 0;
+  }
+  &__list-item {
+    font-size: 1.8rem;
+    & + & {
+      margin: 1rem 0 0 0;
+    }
+  }
+  &__copy {
+    color: #fff;
+    position: absolute;
+    bottom: 20px;
+  }
+}
+
+@media screen and (max-width: 720px) {
+  .footer {
+    height: 30rem;
+  }
+}

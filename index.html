@@ -8,15 +8,43 @@
     <title>Document</title>
   </head>
   <body>
-    <header class="header">
-      <a href=""><img src="img/logo2.png" alt="" class="header__logo" /></a>
-      <img src="img/icon-menu.png" alt="" class="header__menu-icon" />
+    <header>
+      <div id="header-1" class="header">
+        <a href=""><img src="img/logo2.png" alt="" class="header__logo" /></a>
+        <img id="menu" src="img/icon-menu.png" alt="" class="header__menu-icon" />
+      </div>
+      <div id="header-2" class="header-white header--hidden">
+        <a href=""><img src="img/logo3.png" alt="" class="header__logo" /></a>
+        <img id="menu" src="img/icon-menu2.png" alt="" class="header__menu-icon header-white__icon" />
+        <nav class="header__nav header-white__nav">
+          <ul class="header__nav-list">
+            <li class="header__nav-item"><a href="">TOP</a></li>
+            <li class="header__nav-item"><a href="">ABOUT</a></li>
+            <li class="header__nav-item"><a href="">LUNCH</a></li>
+            <li class="header__nav-item"><a href="">COUSE</a></li>
+            <li class="header__nav-item"><a href="">TAKE OUT</a></li>
+            <li class="header__nav-item"><a href="">RESERVE</a></li>
+          </ul>
+        </nav>
+      </div>
     </header>
+
+    <div id="fullsize-nav" class="fullsize-nav">
+      <img id="close" src="img/icon-close.png" alt="" class="fullsize-nav__icon fullsize-nav__icon--close" />
+      <ul class="fullsize-nav__list">
+        <li class="fullsize-nav__item"><a href="">TOP</a></li>
+        <li class="fullsize-nav__item"><a href="">ABOUT</a></li>
+        <li class="fullsize-nav__item"><a href="">LUNCH</a></li>
+        <li class="fullsize-nav__item"><a href="">COUSE</a></li>
+        <li class="fullsize-nav__item"><a href="">TAKE OUT</a></li>
+        <li class="fullsize-nav__item"><a href="">RESERVE</a></li>
+      </ul>
+    </div>
 
     <main class="main">
       <!-- main visual -->
-      <div class="mv">
-        <img src="img/logo1.png" alt="" class="mv__logo" />
+      <div id="mv" class="mv">
+        <h1><img src="img/logo1.png" alt="Grande Maison La Baie" class="mv__logo" /></h1>
         <div class="mv__scroll-arrow"></div>
       </div>
       <!-- end of main visual -->
@@ -43,12 +71,8 @@
       </section>
 
       <div class="about-footer">
-        <p class="about-footer__txt">
-          都会に現れる、白い壁に大きなテラスをもった建物、そして屋根には日本瓦…<br />明治41(1908)年に建てられた歴史ある建物です。
-        </p>
-        <p class="about-footer__txt">
-          その中で繰り広げられるフランス料理は、この建物の佇まいと同じく、フランス料理庭のテイストが融合されたもの。
-        </p>
+        <p class="about-footer__txt">都会に現れる、白い壁に大きなテラスをもった建物、そして屋根には日本瓦…<br />明治41(1908)年に建てられた歴史ある建物です。</p>
+        <p class="about-footer__txt">その中で繰り広げられるフランス料理は、この建物の佇まいと同じく、フランス料理庭のテイストが融合されたもの。</p>
       </div>
       <!-- end of about -->
 
@@ -73,55 +97,80 @@
         <div class="stuation__txtbox">
           <span class="stuation__subttl">Scene</span>
           <h3 class="stuation__ttl">家族のお祝い事</h3>
-          <p>
-            還暦・入学・就職などの様々な家族でのお祝い事に利用いただきたいと思います。
-          </p>
-          <a href="">詳しくはこちらへ</a>
+          <p class="stuation__p">還暦・入学・就職などの様々な家族でのお祝い事に利用いただきたいと思います。</p>
+          <a href="" class="stuation__btn">詳しくはこちらへ</a>
         </div>
-        <div class="stuation__imgbox"><img src="img/scene1.png" alt="" /></div>
+        <div class="stuation__imgbox"><img src="img/scene3.png" alt="" /></div>
         <div class="stuation__txtbox">
           <span class="stuation__subttl">Scene</span>
-          <h3 class="stuation__ttl">家族のお祝い事</h3>
-        </div>
-
-        <div class="stuation__imgbox"><img src="img/scene1.png" alt="" /></div>
-        <div class="stuation__txtbox">
-          <span class="stuation__subttl">Scene</span>
-          <h3 class="stuation__ttl">家族のお祝い事</h3>
+          <h3 class="stuation__ttl">記念日に</h3>
+          <p class="stuation__p">結婚記念日はじめ様々な記念日ごとにご利用いただきたいと思います。</p>
+          <a href="" class="stuation__btn">詳しくはこちらへ</a>
         </div>
 
-        <div class="stuation__imgbox"><img src="img/scene1.png" alt="" /></div>
+        <div class="stuation__imgbox"><img src="img/scene5.png" alt="" /></div>
         <div class="stuation__txtbox">
           <span class="stuation__subttl">Scene</span>
-          <h3 class="stuation__ttl">家族のお祝い事</h3>
+          <h3 class="stuation__ttl">ビジネスや接待で</h3>
+          <p class="stuation__p">重要なお客様をお招きする際にご利用いただきたいと思います。</p>
+          <a href="" class="stuation__btn">詳しくはこちらへ</a>
         </div>
 
-        <div class="stuation__imgbox"><img src="img/scene1.png" alt="" /></div>
+        <div class="stuation__imgbox"><img src="img/scene2.png" alt="" /></div>
         <div class="stuation__txtbox">
           <span class="stuation__subttl">Scene</span>
-          <h3 class="stuation__ttl">家族のお祝い事</h3>
+          <h3 class="stuation__ttl">結婚式・結納</h3>
+          <p class="stuation__p">結婚式や結納の際にご利用いただきたいと思います。</p>
+          <a href="" class="stuation__btn">詳しくはこちらへ</a>
+        </div>
+
+        <div class="stuation__imgbox"><img src="img/scene4.png" alt="" /></div>
+        <div class="stuation__txtbox">
+          <span class="stuation__subttl">Scene</span>
+          <h3 class="stuation__ttl">各種パーティーなど</h3>
+          <p class="stuation__p">貸し切りパーティーや展示会などでのご利用もしていただけます。</p>
+          <a href="" class="stuation__btn">詳しくはこちらへ</a>
         </div>
       </div>
 
       <!-- parallax box -->
       <div class="parallax-box">
-        <img
-          src="img/bg1_lg.png"
-          alt=""
-          class="parallax-box__img rellax"
-          data-rellax-percentage="1"
-        />
+        <img src="img/bg6.jpg" alt="" class="parallax-box__img rellax" data-rellax-percentage="5" data-rellax-speed="-3" />
       </div>
       <!-- end of parallax box -->
 
-      <!-- case -->
-      <section class="case"></section>
-      <!-- end of case -->
+      <!-- menu -->
+      <section class="menu">
+        <a href="" class="menu__imgbox-1">
+          <img src="img/menu-1.png" alt="" />
+          <h2 class="menu__ttl">Menu</h2>
+        </a>
+        <a href="" class="menu__imgbox-2"><img src="img/menu-2.png" alt="" /></a>
+        <a href="" class="menu__imgbox-3"><img src="img/menu-3.png" alt="" /></a>
+        <a href="" class="menu__imgbox-4"><img src="img/menu-4.png" alt="" /></a>
+        <a href="" class="menu__imgbox-5"><img src="img/menu-5.png" alt="" /></a>
+        <a href="" class="menu__imgbox-6"><img src="img/menu-6.png" alt="" /></a>
+        <a href="" class="menu__imgbox-7"><img src="img/menu-7.png" alt="" /></a>
+      </section>
+      <!-- end of menu -->
+
+      <div class="contact">
+        <a href="" class="btn-1">予約・問い合わせ</a>
+      </div>
     </main>
-    <footer></footer>
+    <footer class="footer">
+      <ul class="footer__list">
+        <li class="footer__list-item">営業時間：ランチ(11:30-14:00)</li>
+        <li class="footer__list-item">ディナー(17:30-21:00)</li>
+        <li class="footer__list-item">定休日：月曜日(月曜祝日の場合火曜日)</li>
+        <li class="footer__list-item">パーキングあり(10台)</li>
+      </ul>
+      <small class="footer__copy">&copy; 2021 Grande Maison La Baie.</small>
+    </footer>
     <script src="js/rellax.min.js"></script>
     <script>
-      var rellax = new Rellax(".rellax");
+      const rellax = new Rellax(".rellax");
     </script>
+    <script src="js/script.js"></script>
   </body>
 </html>

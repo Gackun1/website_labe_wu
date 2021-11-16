@@ -19,5 +19,6 @@
     height: 9rem;
     width: 2px;
     background: #fff;
+    animation: 3s moveArrow infinite cubic-bezier(0.25, 0.75, 0.75, 1.15);
   }
 }

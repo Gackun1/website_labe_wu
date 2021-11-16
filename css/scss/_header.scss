@@ -5,10 +5,76 @@
   position: fixed;
   top: 0;
   left: 0;
-  z-index: 1;
+  z-index: 10;
   display: flex;
   justify-content: space-between;
+  transition: 0.75s ease;
+  &--hidden {
+    height: 0;
+    padding-top: 0;
+    padding-bottom: 0;
+    opacity: 0;
+    overflow: hidden;
+  }
   &__menu-icon {
     cursor: pointer;
+    object-fit: contain;
+    opacity: 1;
+    transition: 0.75s ease;
+    &--close {
+      opacity: 0;
+    }
+  }
+  &__nav-list {
+    display: flex;
+  }
+  &__nav-item {
+    position: relative;
+    a {
+      font-size: 16px;
+      white-space: nowrap;
+      display: block;
+      width: fit-content;
+      transition: 0.5s ease;
+      &:after {
+        content: "";
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        width: 0;
+        height: 1px;
+        background: #333;
+        transition: 0.5s ease;
+      }
+      &:hover {
+        &:after {
+          width: 100%;
+        }
+      }
+    }
+    & + & {
+      margin: 0 0 0 3rem;
+    }
+  }
+}
+
+.header-white {
+  @extend .header;
+  background: #fff;
+  &__icon {
+    display: none;
+  }
+  &__nav {
+    display: block;
+  }
+}
+@media screen and (max-width: 720px) {
+  .header-white {
+    &__icon {
+      display: block;
+    }
+    &__nav {
+      display: none;
+    }
   }
 }
