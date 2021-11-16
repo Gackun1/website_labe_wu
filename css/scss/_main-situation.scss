@@ -1,0 +1,11 @@
+.stuation {
+  width: 100%;
+  margin: 10rem 0 0 0;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  &__imgbox {
+    img {
+      width: 100%;
+    }
+  }
+}

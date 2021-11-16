@@ -1,0 +1,57 @@
+.ingredients {
+  display: flex;
+  align-items: center;
+  position: relative;
+  margin: 10rem 0 0 0;
+  &__img {
+    width: 55%;
+  }
+  &__txtbox {
+    width: 45%;
+    padding: 0 7rem;
+    margin: 15rem 0 0 0;
+  }
+  &:before,
+  &:after {
+    content: "";
+    width: 20rem;
+    height: 3rem;
+    background: url(../img/square.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    position: absolute;
+    top: -5rem;
+    right: 10rem;
+  }
+  &:after {
+    top: unset;
+    bottom: -10rem;
+    left: 10rem;
+    background: url(../img/square_rev.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+  }
+}
+
+.ingredients-wrapper {
+  background: url(../img/bg4.png);
+  background-size: cover;
+  padding: 0 0 100rem 0;
+  position: relative;
+  &__bottom-ttl {
+    font-size: 4rem;
+    position: absolute;
+    bottom: 0;
+    right: 10rem;
+    &:after {
+      content: "";
+      width: 2px;
+      height: 15rem;
+      position: absolute;
+      left: 50%;
+      top: 0;
+      transform: translate(0, -110%);
+      background: #cccccc;
+    }
+  }
+}
